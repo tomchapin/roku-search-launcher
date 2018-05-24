@@ -16,3 +16,33 @@ voice commands that launch Netflix and play specific tv shows and movies on my R
 I'm happy to report that I'm successfully doing that now!
 
 Feel free to borrow this and use it however you like!
+
+## Requirements
+
+- Python 3+
+
+
+## Installation
+
+Copy the config.example.yaml file to a file called config.yaml and edit it
+so that it points at your Roku device on your network
+
+
+## Example Usage
+
+Note: These scripts are just examples, and you may need to edit the python
+files to adjust delay/sleep timings at different points and what not.
+
+You can also use them as reference for writing your own, more advanced scripts! 
+
+#### Search for a title and launch it:
+
+    ./search_and_launch.py "StoryBots Super Songs"
+    
+#### Search and launch, then press play (after a short delay):
+
+    ./search_and_launch_and_play.py "StoryBots Super Songs"
+    
+#### Press a button on the remote:
+
+    ./key_press.py Play

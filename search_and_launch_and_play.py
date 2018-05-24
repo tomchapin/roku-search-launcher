@@ -14,8 +14,12 @@ def main():
     """
     roku = RokuController()
 
+    # Grab the search keyword from the first parameter on the command line
+    search_keyword = sys.argv[1]
+
     # Search for the title
-    roku.search(keyword=sys.argv[1])
+    roku.search(keyword=search_keyword)
+
     sleep(3)
 
     # Click the right button repeatedly (to select the first search result)
@@ -25,7 +29,9 @@ def main():
 
     # Launch the item and hit play after a short delay
     roku.key_press('Select')
+
     sleep(5)
+
     roku.key_press('Play')
 
     print('Done!')

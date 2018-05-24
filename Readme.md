@@ -24,8 +24,10 @@ Feel free to borrow this and use it however you like!
 
 ## Installation
 
-Copy the config.example.yaml file to a file called config.yaml and edit it
-so that it points at your Roku device on your network
+1. Copy the config.example.yaml file to a file called config.yaml and edit it
+   so that it points at your Roku device on your network
+   
+2. Run `pip install -r requirements.txt`
 
 
 ## Example Usage
